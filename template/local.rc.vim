@@ -12,12 +12,12 @@ let g:indexOfSrc = 0
 
 " $TARGET_DIRを起点にしたctags登録用リスト
 let g:target_dir_ctags_list = [
-  \   'hogehoge',
+  \   '.',
   \ ]
 
 " 起点なしのpath登録用リスト
 let g:other_dir_path_list = [
-  \   'D:\fugafuga',
+  \   'D:\hogehoge',
   \ ]
 
 " $TARGET_DIRを起点にしたpath登録用リスト
