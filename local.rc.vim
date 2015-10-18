@@ -3,28 +3,36 @@
 "
 
 " ソースディレクトリの指定
-let $SRC_DIR = 'D:\hogehoge'
-let g:code_list = [
-    \   'hoge',
+let $SRC_DIR = 'D:\hoge\fuga'
+let g:src_list = [
+    \   'foo',
+    \   'bar',
     \ ]
-let g:indexOfCode = 0
+let g:indexOfSrc = 0
 
-" pathの設定(ここに設定したパスはfind等の検索対象に含まれる)
-" -> starstarは便利だが、範囲を広げすぎるとfindにかかる時間が膨大になるので注意
-" -> というかベタ書きの方が圧倒的に速いので、必要なところだけベタ書きする
-let g:path_list = [
-  \   'hoge',
-  \   'fuga',
+" $TARGET_DIRを起点にしたctags登録用リスト
+let g:target_dir_ctags_list = [
+  \   'hogehoge',
   \ ]
 
-let g:cdpath_list = [
-  \   '\foo',
-  \   '\foo\bar',
+" 起点なしのpath登録用リスト
+let g:other_dir_path_list = [
+  \   'D:\fugafuga',
   \ ]
 
-let g:ctags_list = [
-  \   '\foo',
-  \   '\foo\bar',
+" $TARGET_DIRを起点にしたpath登録用リスト
+let g:target_dir_path_list = [
+  \   'hogefuga',
+  \ ]
+
+" 起点なしのcdpath登録用リスト
+let g:other_dir_cdpath_list = [
+  \   'D:\fugahoge',
+  \ ]
+
+" $TARGET_DIRを起点にしたcdpath登録用リスト
+let g:target_dir_cdpath_list = [
+  \   'foobar',
   \ ]
 
 " for vim-startify
