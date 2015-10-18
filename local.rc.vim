@@ -31,7 +31,7 @@ let g:ctags_list = [
 if neobundle#tap('vim-startify')
   let g:startify_bookmarks = [
     \   '.',
-    \   '~\.vimrc',
+    \   '~\dotfiles\.vimrc',
     \ ]
 endif
 
