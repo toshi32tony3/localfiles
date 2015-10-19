@@ -13,7 +13,15 @@ let g:indexOfSrc = 0
 " $TARGET_DIRを起点にしたctags登録用リスト
 let g:target_dir_ctags_list = [
   \   '.',
+  \   'hoge',
   \ ]
+
+" $TARGET_DIRを起点にしたctags名前リスト
+" key   : tag生成パス 
+" value : tagに付ける名前
+let g:target_dir_ctags_name_list = {
+  \   'hoge': 'tags_hoge',
+  \ }
 
 " 起点なしのpath登録用リスト
 let g:other_dir_path_list = [
