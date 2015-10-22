@@ -4,10 +4,11 @@
 
 " ソースディレクトリの指定
 let $SRC_DIR = 'D:\hoge\fuga'
-let g:src_list = [
+let g:src_ver_list = [
     \   'foo',
     \   'bar',
     \ ]
+
 let g:indexOfSrc = 0
 
 " $TARGET_DIRを起点にしたctags登録用リスト
