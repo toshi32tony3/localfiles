@@ -49,6 +49,7 @@ if neobundle#tap('vim-startify')
   let g:startify_bookmarks = [
     \   '.',
     \   '~\dotfiles\.vimrc',
+    \   '~\dotfiles\.skk-jisyo',
     \ ]
 endif
 
