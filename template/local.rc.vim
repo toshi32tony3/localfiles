@@ -53,3 +53,10 @@ if neobundle#tap('vim-startify')
     \ ]
 endif
 
+" for syntastic
+if neobundle#tap('syntastic')
+  let g:c_include_dirs = [
+    \   '',
+    \ ]
+endif
+
