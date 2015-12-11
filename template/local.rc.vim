@@ -52,6 +52,7 @@ if neobundle#tap('vim-startify')
         \   '~\dotfiles\.skk-jisyo',
         \   '~\localfiles\local.rc.vim',
         \ ]
+
 endif
 
 " for syntastic
