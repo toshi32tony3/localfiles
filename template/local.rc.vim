@@ -52,8 +52,3 @@ let g:startify_bookmarks = [
       \   '~\localfiles\local.rc.vim',
       \ ]
 
-" for syntastic
-let g:c_include_dirs = [
-      \   '',
-      \ ]
-
