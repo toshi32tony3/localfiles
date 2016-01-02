@@ -45,21 +45,10 @@ let g:target_dir_cdpath_list = [
       \ ]
 
 " for vim-startify
-if neobundle#tap('vim-startify')
-  let g:startify_bookmarks = [
-        \   '.',
-        \   '~\dotfiles\.vimrc',
-        \   '~\dotfiles\.skk-jisyo',
-        \   '~\localfiles\local.rc.vim',
-        \ ]
-
-endif
-
-" for syntastic
-if neobundle#tap('syntastic')
-  let g:c_include_dirs = [
-        \   '',
-        \ ]
-
-endif
+let g:startify_bookmarks = [
+      \   '.',
+      \   '~\dotfiles\.vimrc',
+      \   '~\dotfiles\.skk-jisyo',
+      \   '~\localfiles\local.rc.vim',
+      \ ]
 
