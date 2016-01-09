@@ -3,7 +3,7 @@
 "
 
 " ソースディレクトリの指定
-let g:local_rc#base_dir = 'D:\hoge\fuga'
+let g:local_rc#base_dir = $HOME . '\software'
 let g:local_rc#src_list = [
       \   'vim',
       \ ]
@@ -24,7 +24,7 @@ let g:local_rc#ctags_name_list = {
 
 " 起点なしのpath登録用リスト
 let g:local_rc#other_dir_path_list = [
-      \   'D:\foo',
+      \   $HOME . '\dotfiles',
       \ ]
 
 " g:local_rc#current_src_dirを起点にしたpath登録用リスト
@@ -34,7 +34,7 @@ let g:local_rc#current_src_dir_path_list = [
 
 " 起点なしのcdpath登録用リスト
 let g:local_rc#other_dir_cdpath_list = [
-      \   'D:\bar',
+      \   $HOME . '\.vim\bundle',
       \ ]
 
 " g:local_rc#current_src_dirを起点にしたcdpath登録用リスト
