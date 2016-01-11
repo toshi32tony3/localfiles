@@ -34,6 +34,7 @@ let g:local_rc#current_src_dir_path_list = [
 
 " 起点なしのcdpath登録用リスト
 let g:local_rc#other_dir_cdpath_list = [
+      \   $HOME . '\.vim',
       \   $HOME . '\.vim\bundle',
       \ ]
 
@@ -47,6 +48,6 @@ let g:startify_bookmarks = [
       \   '.',
       \   '~\dotfiles\.vimrc',
       \   '~\dotfiles\.skk-jisyo',
-      \   '~\localfiles\local.rc.vim',
+      \   '~\localfiles\template\local.rc.vim',
       \ ]
 
