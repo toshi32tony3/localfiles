@@ -51,7 +51,7 @@ let g:startify_bookmarks = [
       \   '~\localfiles\template\local.rc.vim',
       \ ]
 
-function! g:SetEnvironmentVariables()
+function! SetEnvironmentVariables()
 
 endfunction
 
