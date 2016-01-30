@@ -51,7 +51,18 @@ let g:startify_bookmarks = [
       \   '~\localfiles\template\local.rc.vim',
       \ ]
 
+" 環境変数を定義
 function! SetEnvironmentVariables()
 
 endfunction
 
+" 構文ハイライト対象を追加
+augroup MySyntax
+  autocmd!
+
+  " Cの定数を追加 "{{{
+  autocmd Syntax c syntax keyword cConstant
+        \ TRUE FALSE SUCCESS FAILURE ON OFF ENABLE DISABLE
+  "}}}
+
+augroup END
