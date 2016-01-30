@@ -60,9 +60,29 @@ endfunction
 augroup MySyntax
   autocmd!
 
-  " Cの定数を追加 "{{{
-  autocmd Syntax c syntax keyword cConstant
-        \ TRUE FALSE SUCCESS FAILURE ON OFF ENABLE DISABLE
-  "}}}
+  " preprocessor condition
+  autocmd Syntax c,cpp syntax match MyPreCondit
+        \ /\v#<%(if|ifdef|ifndef|elif)>/
+  highlight link MyPreCondit PreCondit
+
+  " macro
+  autocmd Syntax c,cpp syntax match MyMacro
+        \ /\v#<%(define|undef)>/
+  highlight link MyMacro Macro
+
+  " constant
+  autocmd Syntax c,cpp syntax match MyDefinedConstant
+        \ /\v<\u{2,}>/
+  highlight link MyDefinedConstant Constant
+
+  " sneak-word
+  autocmd Syntax c,cpp syntax match MyDefinedSneakWord
+        \ /\v<\u+%(_%(\d|\u)+)+>/
+  highlight link MyDefinedSneakWord Character
+
+  " function
+  autocmd Syntax c,cpp syntax match MyDefinedFunction
+        \ /\v%(\s|\()\zs\a+\u+\l+\a+\ze\(/
+  highlight link MyDefinedFunction Function
 
 augroup END
